@@ -2,12 +2,24 @@
     <mat-card-header>
 
       <mat-card-title>Leche</mat-card-title>
-      <mat-card-actions>
-        <button mat-button>LIKE</button>
-        <button mat-button>SHARE</button>
-      </mat-card-actions>
+      <div class="alineacion-derecha">
+          <mat-card-actions>
+            <button mat-button> Ordenar: Menor a mayor</button>
+            <button mat-button> Graficar </button>
+          </mat-card-actions>
+
+      </div>
     </mat-card-header>
-    <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
-    <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
-       
+    <div class="row">
+        <div class="column" *ngFor= "let producto of leche"> 
+            <div class = "content_img">
+                <img matTooltip="Info about the action" 
+                  src="https://material.angular.io/assets/img/examples/shiba2.jpg" style="width:100%">
+                  <div> {{producto.name}} </div>
+            </div>
+            Cantidad de sal: {{producto.valor}}
+            
+        </div>
+        
+      </div>
   </mat-card>
