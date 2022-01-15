@@ -13,20 +13,23 @@ export class ProductoComponent implements OnInit {
     nombre: 'Sodio'
   };
 
-  CANTIDAD_ITEMS = 3;
+  CANTIDAD_ITEMS = 5;
 
   // Variables
   orden?:string;
   minisLeches : Prod[] = [];
+  tipoComponente : string = '' + this.componenteAnalisis.value;
   leche = TIPOSLECHES.slice(0, this.CANTIDAD_ITEMS);
   constructor() { }
 
   ngOnInit(): void {
     this.orden = "little";
+    
     this.leche.forEach(
       item => {
+        console.log(this.tipoComponente);
         this.minisLeches.push(
-          {name: item.name, valor: item.grasa, img: item.imagen}
+          {nombre: item.name, valor: item['proteina'], img: item.imagen}
           );
       }
     );
@@ -41,7 +44,7 @@ export class ProductoComponent implements OnInit {
 }
 
 export interface Prod {
-  name: string;
+  nombre: string;
   valor?: number;
   img?: string;
 }

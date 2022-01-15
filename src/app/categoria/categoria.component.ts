@@ -22,6 +22,11 @@ export class CategoriaComponent implements OnInit {
     
   }
 
+  ngOnChanges() {
+    console.log('Cambiiooo');
+    // Acaaaa crear nuevos productos
+  }
+
   tiposProducto? = CATEGORIAS.filter(
     item => item.valor === this.categoriaSeleccionada
   )

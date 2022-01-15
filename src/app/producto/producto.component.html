@@ -19,7 +19,8 @@
     <div class="row">
         <div class="column" *ngFor= "let producto of leche"> 
             <div class = "content_img">
-                <img src="https://material.angular.io/assets/img/examples/shiba2.jpg" style="width:100%">
+                <img src= {{producto.imagen}} style="width:100%">
+                <!-- <img src="https://material.angular.io/assets/img/examples/shiba2.jpg" style="width:100%"> -->
                   <div> {{nombreTipoProducto}} </div>
             </div>
             Cantidad de lo que está analizando
