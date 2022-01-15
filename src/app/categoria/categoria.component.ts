@@ -7,7 +7,7 @@ import { CATEGORIAS } from '../data/categorias';
   styleUrls: ['./categoria.component.css']
 })
 export class CategoriaComponent implements OnInit {
-  @Input() elementoAnalisis = {
+  @Input() componenteAnalisis = {
     value: 'sodio',
     nombre: 'Sodio'
   };

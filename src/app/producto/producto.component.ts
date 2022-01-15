@@ -8,18 +8,41 @@ import { Producto } from '../producto';
 })
 export class ProductoComponent implements OnInit {
   @Input() nombreTipoProducto = '';
-  @Input() componenteAnalisis = '';
+  @Input() componenteAnalisis = {
+    value: 'sodio',
+    nombre: 'Sodio'
+  };
+
   CANTIDAD_ITEMS = 3;
 
-  leche = TIPOSLECHES.slice(0, this.CANTIDAD_ITEMS);
+  // Variables
   orden?:string;
-  // posibleOrden 
+  minisLeches : Prod[] = [];
+  leche = TIPOSLECHES.slice(0, this.CANTIDAD_ITEMS);
   constructor() { }
 
   ngOnInit(): void {
     this.orden = "little";
+    this.leche.forEach(
+      item => {
+        this.minisLeches.push(
+          {name: item.name, valor: item.grasa, img: item.imagen}
+          );
+      }
+    );
+    console.log(this.minisLeches);
     
   }
 
+  // TODO: Ordenar segun selecotr de orden
+
+
+
+}
+
+export interface Prod {
+  name: string;
+  valor?: number;
+  img?: string;
 }
 
