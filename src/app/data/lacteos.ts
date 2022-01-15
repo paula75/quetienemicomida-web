@@ -14,7 +14,7 @@ export const TIPOSLECHES: Producto[] = [
         colesterol: 0.16, 
         azucar: 4.7,
         sodio: 32,
-        imagen: 'assets/images/lacteos/colun_descremada.png'
+        imagen: 'assets/images/lacteos/leche/colun_descremada.png'
     },{
         name: 'Colun Entera', 
         marca: 'Colun',
@@ -26,7 +26,7 @@ export const TIPOSLECHES: Producto[] = [
         colesterol: 10, 
         azucar: 4.6,
         sodio: 32,
-        imagen: 'assets/images/lacteos/colun_entera.png'
+        imagen: 'assets/images/lacteos/leche/colun_entera.png'
     },{
         name: 'Colun Semidescremada', 
         marca: 'Colun',
@@ -38,7 +38,7 @@ export const TIPOSLECHES: Producto[] = [
         colesterol: 5, 
         azucar: 4.6,
         sodio: 33,
-        imagen: 'assets/images/lacteos/colun_semidescremada.png'
+        imagen: 'assets/images/lacteos/leche/colun_semidescremada.png'
     },{
         name: 'Colun Semidescremada Sin lactosa', 
         marca: 'Colun',
@@ -50,7 +50,7 @@ export const TIPOSLECHES: Producto[] = [
         colesterol: 5, 
         azucar: 4.4,
         sodio: 40,
-        imagen: 'assets/images/lacteos/colun_semidescremadasinlactosa.png'
+        imagen: 'assets/images/lacteos/leche/colun_semidescremadasinlactosa.png'
     },{
         name: 'Soprole Entera', 
         marca: 'Soprole',
@@ -62,7 +62,7 @@ export const TIPOSLECHES: Producto[] = [
         colesterol: 9.6, 
         azucar: 4.6,
         sodio: 38,
-        imagen: 'assets/images/lacteos/soprole_entera.png'
+        imagen: 'assets/images/lacteos/leche/soprole_entera.png'
     },{
         name: 'Soprole Semidescremada', 
         marca: 'Soprole',
@@ -74,7 +74,7 @@ export const TIPOSLECHES: Producto[] = [
         colesterol: 5.9, 
         azucar: 4.5,
         sodio: 25.1,
-        imagen: 'assets/images/lacteos/soprole_semidescremada.png'
+        imagen: 'assets/images/lacteos/leche/soprole_semidescremada.png'
     },{
         name: 'Soprole Descremada', 
         marca: 'Soprole',
@@ -86,7 +86,7 @@ export const TIPOSLECHES: Producto[] = [
         colesterol: 1.6, 
         azucar: 4.6,
         sodio: 21.6,
-        imagen: 'assets/images/lacteos/soprole_descremada.png'
+        imagen: 'assets/images/lacteos/leche/soprole_descremada.png'
     },{
         name: 'Surlat Descremada sin lactosa', 
         marca: 'Surlat',
@@ -97,7 +97,7 @@ export const TIPOSLECHES: Producto[] = [
         carbohidratos: 4.9,
         azucar: 4.8,
         sodio: 40,
-        imagen: 'assets/images/lacteos/surlat_descremadasinlactosa.png'
+        imagen: 'assets/images/lacteos/leche/surlat_descremadasinlactosa.png'
     },{
         name: 'Surlat Semidescremada sin lactosa', 
         marca: 'Surlat',
@@ -108,7 +108,7 @@ export const TIPOSLECHES: Producto[] = [
         carbohidratos: 4.9,
         azucar: 4.7,
         sodio: 44,
-        imagen: 'assets/images/lacteos/surlat_semidescremadasinlactosa.png'
+        imagen: 'assets/images/lacteos/leche/surlat_semidescremadasinlactosa.png'
     },{
         name: 'Loncoleche Semidescremada', 
         marca: 'Loncoleche',
@@ -119,7 +119,7 @@ export const TIPOSLECHES: Producto[] = [
         carbohidratos: 4.6,
         azucar: 4.6,
         sodio: 40,
-        imagen: 'assets/images/lacteos/loncoleche_semidescremada.png'
+        imagen: 'assets/images/lacteos/leche/loncoleche_semidescremada.png'
     },{
         name: 'Loncoleche Entera', 
         marca: 'Loncoleche',
@@ -130,7 +130,7 @@ export const TIPOSLECHES: Producto[] = [
         carbohidratos: 4.6,
         azucar: 4.6,
         sodio: 40,
-        imagen: 'assets/images/lacteos/loncoleche_entera.png'
+        imagen: 'assets/images/lacteos/leche/loncoleche_entera.png'
     },{
         name: 'Loncoleche Descremada', 
         marca: 'Loncoleche',
@@ -141,14 +141,59 @@ export const TIPOSLECHES: Producto[] = [
         carbohidratos: 4.8,
         azucar: 4.8,
         sodio: 32,
-        imagen: 'assets/images/lacteos/loncoleche_Descremada.png'
+        imagen: 'assets/images/lacteos/leche/loncoleche_Descremada.png'
     },
     
 ];
 
+export const TIPOSYOGURT: Producto[] = [
+    {
+        name: 'Danone Oikos no endulzado', 
+        marca: 'Danone',
+        tipo: 'Oikos no endulzado',
+        energia: 98,
+        proteina: 4.6,
+        grasa: 4,
+        carbohidratos: 6.5,
+        colesterol: 19.7, 
+        azucar: 5.7,
+        sodio: 59,
+        imagen: 'assets/images/lacteos/yogurt/danone_iokos.png'
+    },{
+        name: 'Soprole Natural', 
+        marca: 'Soprole',
+        tipo: 'Natural',
+        energia: 70,
+        proteina: 3.6,
+        grasa: 3.1,
+        carbohidratos: 6.9,
+        colesterol: 10.6, 
+        azucar: 6.9,
+        sodio: 55,
+        imagen: 'assets/images/lacteos/yogurt/soprole_natural.png'
+    },{
+        name: 'Soprole Protein endulzado', 
+        marca: 'Soprole',
+        tipo: 'Protein endulzado',
+        energia: 68,
+        proteina: 6.6,
+        grasa: 1.8,
+        carbohidratos: 6.3,
+        colesterol: 11.4, 
+        azucar: 6.3,
+        sodio: 65,
+        imagen: 'assets/images/lacteos/yogurt/soprole_proteinendulzado.png'
+    },
+]
 
 export const LECHE : TipoProducto = {
     valor: 'leche',
     nombre: 'Leche',
     productos: TIPOSLECHES
+}
+
+export const YOGURT : TipoProducto = {
+    valor: 'yogurt',
+    nombre: 'Yogurt',
+    productos: TIPOSYOGURT
 }

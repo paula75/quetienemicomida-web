@@ -1,6 +1,12 @@
 <mat-form-field appearance="fill">
     <mat-label>Escoga una categoría</mat-label>
-    <mat-select >
+    <mat-select [(ngModel)]="categoriaSeleccionada">
       <mat-option *ngFor="let categoria of categorias" [value]="categoria.valor"> {{categoria.nombre}} </mat-option>
     </mat-select>
-  </mat-form-field>
+</mat-form-field>
+
+<div *ngIf="categoriaSeleccionada" >
+  
+  <app-producto *ngFor="let cosa of cosas" [nombreTipoProducto]="cosa" ></app-producto>
+</div>
+<a> {{tiposProducto}} </a>

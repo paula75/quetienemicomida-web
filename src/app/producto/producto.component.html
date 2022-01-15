@@ -1,7 +1,7 @@
 <mat-card class="example-card">
     <mat-card-header>
 
-      <mat-card-title>Leche</mat-card-title>
+      <mat-card-title> {{nombreTipoProducto}} </mat-card-title>
       <div class="alineacion-derecha">
           <mat-card-actions>
             <button mat-button> Ordenar: Menor a mayor</button>
@@ -14,7 +14,7 @@
         <div class="column" *ngFor= "let producto of leche"> 
             <div class = "content_img">
                 <img src="https://material.angular.io/assets/img/examples/shiba2.jpg" style="width:100%">
-                  <div> {{producto.name}} </div>
+                  <div> {{nombreTipoProducto}} </div>
             </div>
             Cantidad de lo que está analizando
             

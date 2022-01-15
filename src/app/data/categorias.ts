@@ -1,13 +1,14 @@
 import { Categoria } from './../categoria';
 
-import { LECHE } from './lacteos';
+import { LECHE, YOGURT } from './lacteos';
 
 export const CATEGORIAS: Categoria[] = [
     {
         valor: 'lacteos', 
         nombre: 'Lácteos',
         tiposProductos: [
-            LECHE
+            LECHE,
+            YOGURT
         ]
     },
 ];
