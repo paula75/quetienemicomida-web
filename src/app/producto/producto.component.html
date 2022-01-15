@@ -1,10 +1,16 @@
 <mat-card class="example-card">
     <mat-card-header>
 
-      <mat-card-title> {{nombreTipoProducto}} </mat-card-title>
+      <mat-card-title class="titulo-seccion"> {{nombreTipoProducto}} </mat-card-title>
       <div class="alineacion-derecha">
           <mat-card-actions>
-            <button mat-button> Ordenar: Menor a mayor</button>
+            Ordenar por: 
+            <mat-form-field appearance="fill">
+               <mat-select [(value)]="orden">
+                <mat-option value="little"> Menor a mayor </mat-option>
+                <mat-option value="big"> Mayor a menor </mat-option>
+              </mat-select>
+            </mat-form-field>
             <button mat-button> Graficar </button>
           </mat-card-actions>
 

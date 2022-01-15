@@ -1,3 +1,8 @@
+
+<mat-card class="example-card">
+
+<div> Se ha seleccionado la opción para comparar productos por : {{elementoAnalisis.nombre}} </div>
+
 <mat-form-field appearance="fill">
     <mat-label>Escoga una categoría</mat-label>
     <mat-select [(ngModel)]="categoriaSeleccionada">
@@ -10,3 +15,5 @@
   <app-producto *ngFor="let cosa of cosas" [nombreTipoProducto]="cosa" ></app-producto>
 </div>
 <a> {{tiposProducto}} </a>
+
+</mat-card>

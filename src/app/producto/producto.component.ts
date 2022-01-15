@@ -7,14 +7,17 @@ import { Producto } from '../producto';
   styleUrls: ['./producto.component.css']
 })
 export class ProductoComponent implements OnInit {
-  @Input() nombreTipoProducto = ''
+  @Input() nombreTipoProducto = '';
+  @Input() componenteAnalisis = '';
   CANTIDAD_ITEMS = 3;
 
   leche = TIPOSLECHES.slice(0, this.CANTIDAD_ITEMS);
-  
+  orden?:string;
+  // posibleOrden 
   constructor() { }
 
   ngOnInit(): void {
+    this.orden = "little";
     
   }
 

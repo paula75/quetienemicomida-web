@@ -7,10 +7,9 @@
         <button mat-button [matMenuTriggerFor]="menu">Menu</button>
         <mat-menu #menu="matMenu">
             <span *ngFor= "let tipo of tipoAnalisis">
-                <button mat-menu-item>{{tipo}}</button>
+                <button mat-menu-item (click)="chooseAnalisis(tipo)" >{{tipo.nombre}}</button>
             </span>
         </mat-menu>
-
         <button mat-button> Sobre nosotros</button>
 
         <button mat-button> Contacto</button>
@@ -18,3 +17,5 @@
     </mat-toolbar>
   </p>
   
+<app-categoria  [elementoAnalisis]="elementoAnalisis"></app-categoria>
+
