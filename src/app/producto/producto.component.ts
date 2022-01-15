@@ -8,8 +8,9 @@ import { Producto } from '../producto';
 })
 export class ProductoComponent implements OnInit {
   @Input() nombreTipoProducto = ''
+  CANTIDAD_ITEMS = 3;
 
-  leche = TIPOSLECHES;
+  leche = TIPOSLECHES.slice(0, this.CANTIDAD_ITEMS);
   
   constructor() { }
 
