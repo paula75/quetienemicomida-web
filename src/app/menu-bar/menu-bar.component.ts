@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MenuBarComponent implements OnInit {
   tipoAnalisis = [
-    'Sal',
+    'Sodio',
     'Azúcar',
     'Proteína',
     'Grasa',

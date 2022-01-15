@@ -1,0 +1,6 @@
+<mat-form-field appearance="fill">
+    <mat-label>Escoga una categoría</mat-label>
+    <mat-select >
+      <mat-option *ngFor="let categoria of categorias" [value]="categoria.valor"> {{categoria.nombre}} </mat-option>
+    </mat-select>
+  </mat-form-field>
