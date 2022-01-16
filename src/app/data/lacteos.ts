@@ -183,6 +183,78 @@ export const TIPOSYOGURT: Producto[] = [
         azucar: 6.3,
         sodio: 65,
         imagen: 'assets/images/lacteos/yogurt/soprole_proteinendulzado.png'
+    },{
+        nombre: 'Colun Batido vainilla', 
+        marca: 'Colun',
+        tipo: 'Batido vainilla',
+        energia: 84,
+        proteina: 3.7,
+        grasa: 2.2,
+        carbohidratos: 12.4,
+        colesterol: 7, 
+        azucar: 9.9,
+        sodio: 45,
+        imagen: 'assets/images/lacteos/yogurt/colun_batidovainilla.png'
+    },{
+        nombre: 'Nestle Griego sin endulzar', 
+        marca: 'Nestle',
+        tipo: 'Griego sin endulzar',
+        energia: 99,
+        proteina: 3.7,
+        grasa: 5.3,
+        carbohidratos: 9,
+        colesterol: 19, 
+        azucar: 6.2,
+        sodio: 87,
+        imagen: 'assets/images/lacteos/yogurt/nestle_griegosinendulzar.png'
+    },{
+        nombre: 'Colun Light sin lactosa', 
+        marca: 'Colun',
+        tipo: 'Light sin lactosa',
+        energia: 53,
+        proteina: 4.5,
+        grasa: 0.1,
+        carbohidratos: 8.5,
+        colesterol: 0.3, 
+        azucar: 7.3,
+        sodio: 55,
+        imagen: 'assets/images/lacteos/yogurt/colun_lightsinlactosa.png'
+    },{
+        nombre: 'Soprole Gold trozos frutos secos', 
+        marca: 'Soprole',
+        tipo: 'Gold trozos frutos secos',
+        energia: 110,
+        proteina: 3.1,
+        grasa: 3.1,
+        carbohidratos: 16.3,
+        colesterol: 7, 
+        azucar: 9.3,
+        sodio: 66,
+        imagen: 'assets/images/lacteos/yogurt/soprole_goldtrozosfrutossecos.png'
+    },{
+        nombre: 'Soprole Yoghito', 
+        marca: 'Soprole',
+        tipo: 'Yoghito',
+        energia: 81,
+        proteina: 2.9,
+        grasa: 2.4,
+        carbohidratos: 11.9,
+        colesterol: 6.5, 
+        azucar: 9.4,
+        sodio: 44,
+        imagen: 'assets/images/lacteos/yogurt/soprole_yoghito.png'
+    },{
+        nombre: 'Danone Light & Free', 
+        marca: 'Danone',
+        tipo: 'Light & Free',
+        energia: 54,
+        proteina: 4.5,
+        grasa: 1,
+        carbohidratos: 6.5,
+        colesterol: 4.5, 
+        azucar: 5.3,
+        sodio: 61,
+        imagen: 'assets/images/lacteos/yogurt/danone_light&free.png'
     },
 ]
 

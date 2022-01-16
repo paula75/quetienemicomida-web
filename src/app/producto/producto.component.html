@@ -2,6 +2,7 @@
     <mat-card-header>
 
       <mat-card-title class="titulo-seccion"> {{nombreTipoProducto}} </mat-card-title>
+      <mat-card-subtitle class="subtitulo-seccion"> Se muestran {{CANTIDAD_ITEMS}} productos de {{cantidadProductos}} </mat-card-subtitle>
       <div class="alineacion-derecha">
           <mat-card-actions>
             Ordenar por: 
@@ -20,9 +21,11 @@
         <div class="column" *ngFor= "let producto of productosAcotados"> 
             <div class = "content_img">
                 <img src= {{producto.imagen}} style="width:100%">
-                  <div> {{nombreTipoProducto}} </div>
+                  <div> {{producto.nombre}} </div>
             </div>
-            Cantidad de {{componenteAnalisis.nombre}} : {{producto.valor}} gr
+          <div class="foot-img">
+            Cant. de {{componenteAnalisis.nombre}} : {{producto.valor}} gr
+          </div>
             
         </div>
         

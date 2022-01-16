@@ -4,15 +4,15 @@
         <img class="logo" src= "../../assets/images/logo.png">
 
 
-        <button mat-button [matMenuTriggerFor]="menu">Menu</button>
+        <button mat-button [matMenuTriggerFor]="menu" class="font-menu">Menu</button>
         <mat-menu #menu="matMenu">
             <span *ngFor= "let tipo of tipoAnalisis">
                 <button mat-menu-item (click)="chooseAnalisis(tipo)" >{{tipo.nombre}}</button>
             </span>
         </mat-menu>
-        <button mat-button> Sobre nosotros</button>
+        <button mat-button class="font-menu"> Sobre nosotros </button>
 
-        <button mat-button> Contacto</button>
+        <button mat-button class="font-menu"> Contacto</button>
 
     </mat-toolbar>
   </p>

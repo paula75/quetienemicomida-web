@@ -15,21 +15,22 @@ export class ProductoComponent implements OnInit {
   @Input() listaProductos?: Producto[] = [];
 
   CANTIDAD_ITEMS = 5;
-
   // Variables
-  orden?:string;
-  minisLeches : Prod[] = [];
+  orden : string = "little";
+  cantidadProductos: number = 0;
   tipoComponente : string = '' + this.componenteAnalisis.value;
   productosAcotados?: Producto[] = [];
 
   constructor() { }
 
   ngOnInit(): void {
-    this.orden = "little";
     this.productosAcotados = this.listaProductos;
-
     this.ordenarProductos();
     
+  }
+
+  ngOnChanges(){
+    this.cantidadProductos = this.listaProductos? this.listaProductos.length : 0;
   }
 
   // TODO: Ordenar segun selector de orden
