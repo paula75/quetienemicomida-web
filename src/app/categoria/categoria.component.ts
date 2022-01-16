@@ -29,21 +29,15 @@ export class CategoriaComponent implements OnInit {
   }
 
   ngOnChanges() {
-    console.log('Cambiiooo menu');
     this.categoriaSeleccionada = undefined;
 
   }
 
   cambioCategoria(data: any){
-    // Acaaaa crear nuevos productos
+    // Aca crear nuevos productos
     if (this.categoriaSeleccionada){
       this.tiposProductosAnalisis = [];
-      console.log('Categoria seleccionada');
-      console.log(this.categoriaSeleccionada);
-      // READ data
       this.tiposProductos = this.categoriaSeleccionada.tiposProductos;
-
-      console.log(this.tiposProductos);
 
       this.tiposProductos.forEach(
         item =>
@@ -55,7 +49,6 @@ export class CategoriaComponent implements OnInit {
 
           item.productos.forEach(
             producto => {
-              // Sacar logica a  otra funcion
               productoAcotado = this.extraerComponente(producto, this.componenteAnalisis.value);
 
               // Nuevo producto
@@ -80,8 +73,6 @@ export class CategoriaComponent implements OnInit {
           )
 
       }
-      console.log('Lista de tipos de productos');
-      console.log(this.tiposProductosAnalisis)
 
     }
   
