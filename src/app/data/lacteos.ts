@@ -4,7 +4,7 @@ import { Producto } from './../producto';
 
 export const TIPOSLECHES: Producto[] = [
     {
-        name: 'Colun Descremada', 
+        nombre: 'Colun Descremada', 
         marca: 'Colun',
         tipo: 'Descremada',
         energia: 32,
@@ -16,7 +16,7 @@ export const TIPOSLECHES: Producto[] = [
         sodio: 32,
         imagen: 'assets/images/lacteos/leche/colun_descremada.png'
     },{
-        name: 'Colun Entera', 
+        nombre: 'Colun Entera', 
         marca: 'Colun',
         tipo: 'Entera',
         energia: 59,
@@ -28,7 +28,7 @@ export const TIPOSLECHES: Producto[] = [
         sodio: 32,
         imagen: 'assets/images/lacteos/leche/colun_entera.png'
     },{
-        name: 'Colun Semidescremada', 
+        nombre: 'Colun Semidescremada', 
         marca: 'Colun',
         tipo: 'Semidescremada',
         energia: 45,
@@ -40,7 +40,7 @@ export const TIPOSLECHES: Producto[] = [
         sodio: 33,
         imagen: 'assets/images/lacteos/leche/colun_semidescremada.png'
     },{
-        name: 'Colun Semidescremada Sin lactosa', 
+        nombre: 'Colun Semidescremada Sin lactosa', 
         marca: 'Colun',
         tipo: 'Semidescremada Sin lactosa',
         energia: 45,
@@ -52,7 +52,7 @@ export const TIPOSLECHES: Producto[] = [
         sodio: 40,
         imagen: 'assets/images/lacteos/leche/colun_semidescremadasinlactosa.png'
     },{
-        name: 'Soprole Entera', 
+        nombre: 'Soprole Entera', 
         marca: 'Soprole',
         tipo: 'Entera',
         energia: 58,
@@ -64,7 +64,7 @@ export const TIPOSLECHES: Producto[] = [
         sodio: 38,
         imagen: 'assets/images/lacteos/leche/soprole_entera.png'
     },{
-        name: 'Soprole Semidescremada', 
+        nombre: 'Soprole Semidescremada', 
         marca: 'Soprole',
         tipo: 'Semidescremada',
         energia: 44,
@@ -76,7 +76,7 @@ export const TIPOSLECHES: Producto[] = [
         sodio: 25.1,
         imagen: 'assets/images/lacteos/leche/soprole_semidescremada.png'
     },{
-        name: 'Soprole Descremada', 
+        nombre: 'Soprole Descremada', 
         marca: 'Soprole',
         tipo: 'Descremada',
         energia: 32,
@@ -88,7 +88,7 @@ export const TIPOSLECHES: Producto[] = [
         sodio: 21.6,
         imagen: 'assets/images/lacteos/leche/soprole_descremada.png'
     },{
-        name: 'Surlat Descremada sin lactosa', 
+        nombre: 'Surlat Descremada sin lactosa', 
         marca: 'Surlat',
         tipo: 'Descremada sin lactosa',
         energia: 33,
@@ -99,7 +99,7 @@ export const TIPOSLECHES: Producto[] = [
         sodio: 40,
         imagen: 'assets/images/lacteos/leche/surlat_descremadasinlactosa.png'
     },{
-        name: 'Surlat Semidescremada sin lactosa', 
+        nombre: 'Surlat Semidescremada sin lactosa', 
         marca: 'Surlat',
         tipo: 'Semidescremada sin lactosa',
         energia: 43,
@@ -110,7 +110,7 @@ export const TIPOSLECHES: Producto[] = [
         sodio: 44,
         imagen: 'assets/images/lacteos/leche/surlat_semidescremadasinlactosa.png'
     },{
-        name: 'Loncoleche Semidescremada', 
+        nombre: 'Loncoleche Semidescremada', 
         marca: 'Loncoleche',
         tipo: 'Semidescremada',
         energia: 45,
@@ -121,7 +121,7 @@ export const TIPOSLECHES: Producto[] = [
         sodio: 40,
         imagen: 'assets/images/lacteos/leche/loncoleche_semidescremada.png'
     },{
-        name: 'Loncoleche Entera', 
+        nombre: 'Loncoleche Entera', 
         marca: 'Loncoleche',
         tipo: 'Entera',
         energia: 59,
@@ -132,7 +132,7 @@ export const TIPOSLECHES: Producto[] = [
         sodio: 40,
         imagen: 'assets/images/lacteos/leche/loncoleche_entera.png'
     },{
-        name: 'Loncoleche Descremada', 
+        nombre: 'Loncoleche Descremada', 
         marca: 'Loncoleche',
         tipo: 'Descremada',
         energia: 33,
@@ -148,7 +148,7 @@ export const TIPOSLECHES: Producto[] = [
 
 export const TIPOSYOGURT: Producto[] = [
     {
-        name: 'Danone Oikos no endulzado', 
+        nombre: 'Danone Oikos no endulzado', 
         marca: 'Danone',
         tipo: 'Oikos no endulzado',
         energia: 98,
@@ -160,7 +160,7 @@ export const TIPOSYOGURT: Producto[] = [
         sodio: 59,
         imagen: 'assets/images/lacteos/yogurt/danone_iokos.png'
     },{
-        name: 'Soprole Natural', 
+        nombre: 'Soprole Natural', 
         marca: 'Soprole',
         tipo: 'Natural',
         energia: 70,
@@ -172,7 +172,7 @@ export const TIPOSYOGURT: Producto[] = [
         sodio: 55,
         imagen: 'assets/images/lacteos/yogurt/soprole_natural.png'
     },{
-        name: 'Soprole Protein endulzado', 
+        nombre: 'Soprole Protein endulzado', 
         marca: 'Soprole',
         tipo: 'Protein endulzado',
         energia: 68,

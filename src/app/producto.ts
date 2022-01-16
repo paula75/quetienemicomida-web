@@ -1,7 +1,7 @@
 export interface Producto {
-    name: string;
-    marca: string;
-    tipo: string;
+    nombre: string;
+    marca?: string;
+    tipo?: string;
     energia?: number;
     proteina?: number;
     grasa?: number;
@@ -10,5 +10,6 @@ export interface Producto {
     azucar?: number;
     sodio?: number;
     imagen?: string;
+    valor?: number;
   };
   

@@ -20,6 +20,8 @@ export class ProductoComponent implements OnInit {
   minisLeches : Prod[] = [];
   tipoComponente : string = '' + this.componenteAnalisis.value;
   leche = TIPOSLECHES.slice(0, this.CANTIDAD_ITEMS);
+
+
   constructor() { }
 
   ngOnInit(): void {
@@ -29,11 +31,10 @@ export class ProductoComponent implements OnInit {
       item => {
         console.log(this.tipoComponente);
         this.minisLeches.push(
-          {nombre: item.name, valor: item['proteina'], img: item.imagen}
+          {nombre: item.nombre, valor: item['proteina'], img: item.imagen}
           );
       }
     );
-    console.log(this.minisLeches);
     
   }
 

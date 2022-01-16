@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Analisis } from '../categoria/categoria.component';
 
 @Component({
   selector: 'app-menu-bar',
@@ -28,7 +29,7 @@ export class MenuBarComponent implements OnInit {
     }
   ];
 
-  elementoAnalisis = {
+  elementoAnalisis : Analisis= {
     value: 'sodio',
     nombre: 'Sodio'
   };
