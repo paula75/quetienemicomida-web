@@ -60,6 +60,7 @@ export class ProductoComponent implements OnInit {
             
         })
       }
+      console.log(this.listaProductos);
       this.productosAcotados = this.listaProductos.slice(0, this.CANTIDAD_ITEMS);
       
     }

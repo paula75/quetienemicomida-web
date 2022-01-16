@@ -42,7 +42,6 @@ export class MenuBarComponent implements OnInit {
 
   chooseAnalisis(tipo: any) {
     this.elementoAnalisis = tipo;
-    
   }
 
 }

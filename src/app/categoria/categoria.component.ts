@@ -37,6 +37,7 @@ export class CategoriaComponent implements OnInit {
   cambioCategoria(data: any){
     // Acaaaa crear nuevos productos
     if (this.categoriaSeleccionada){
+      this.tiposProductosAnalisis = [];
       console.log('Categoria seleccionada');
       console.log(this.categoriaSeleccionada);
       // READ data
@@ -49,19 +50,13 @@ export class CategoriaComponent implements OnInit {
         { // item es leche
           let productosAnalisis: Producto[] = [];
           let productoAcotado: number;
-          
 
           if (item.productos !== undefined) {
 
           item.productos.forEach(
             producto => {
               // Sacar logica a  otra funcion
-              if (this.componenteAnalisis.value === 'sodio' && producto['sodio'] != undefined)
-              productoAcotado = producto['sodio'] 
-              else if (this.componenteAnalisis.value === 'azucar' && producto['azucar'] != undefined )
-              productoAcotado = producto['azucar'] 
-              else if (this.componenteAnalisis.value === 'proteina' && producto['proteina'] != undefined )
-              productoAcotado = producto['proteina']
+              productoAcotado = this.extraerComponente(producto, this.componenteAnalisis.value);
 
               // Nuevo producto
               let productoRenovado: Producto = {
@@ -82,8 +77,6 @@ export class CategoriaComponent implements OnInit {
 
             }
           }
-
-            
           )
 
       }
@@ -92,10 +85,23 @@ export class CategoriaComponent implements OnInit {
 
     }
   
-  tiposProducto? = CATEGORIAS.filter(
-    item => item.valor === this.categoriaSeleccionada?.nombre
-  )
-  cosas = ["Leche", "Yogurt"];
+
+  private extraerComponente(producto: Producto, componente: string) {
+    let valueComponente : number = 0;
+    if (componente === 'sodio' && producto['sodio'] != undefined)
+      valueComponente = producto['sodio'];
+    else if (componente === 'azucar' && producto['azucar'] != undefined)
+      valueComponente = producto['azucar'];
+    else if (componente === 'proteina' && producto['proteina'] != undefined)
+      valueComponente = producto['proteina'];
+    else if (componente === 'grasa' && producto['grasa'] != undefined)
+      valueComponente = producto['grasa'];
+    else if (componente === 'carbohidratos' && producto['carbohidratos'] != undefined)
+      valueComponente = producto['carbohidratos'];
+    else if (componente === 'colesterol' && producto['colesterol'] != undefined)
+      valueComponente = producto['colesterol'];
+    return valueComponente;
+  }
 }
 
 
