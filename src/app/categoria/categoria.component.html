@@ -12,8 +12,7 @@
 
 <div *ngIf="categoriaSeleccionada" >
   
-  <app-producto *ngFor="let cosa of cosas" [nombreTipoProducto]="cosa" [componenteAnalisis] = "componenteAnalisis"></app-producto>
+  <app-producto *ngFor="let item of tiposProductosAnalisis" [nombreTipoProducto]="item.nombre" [listaProductos]="item.productos" [componenteAnalisis] = "componenteAnalisis"></app-producto>
 </div>
-<a> {{tiposProducto}} </a>
 
 </mat-card>

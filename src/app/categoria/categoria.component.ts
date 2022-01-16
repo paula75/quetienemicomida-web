@@ -19,14 +19,13 @@ export class CategoriaComponent implements OnInit {
 
   categorias = CATEGORIAS;
   categoriaSeleccionada?: Categoria ;
-  listaTiposProductos?: TipoProducto[];
+  tiposProductos?: TipoProducto[];
   tiposProductosAnalisis? : TipoProducto[];
-  productosAnalisis?: Producto[];
 
   constructor() { }
   
   ngOnInit(): void {
-    
+    this.tiposProductosAnalisis = [];
   }
 
   ngOnChanges() {
@@ -35,20 +34,19 @@ export class CategoriaComponent implements OnInit {
   }
 
   cambioCategoria(data: any){
-    console.log('Cambiar lista de productos');
-    console.log(data);
     // Acaaaa crear nuevos productos
     if (this.categoriaSeleccionada){
       console.log('Categoria seleccionada');
       console.log(this.categoriaSeleccionada);
       // READ data
-      this.listaTiposProductos = this.categoriaSeleccionada.tiposProductos;
+      this.tiposProductos = this.categoriaSeleccionada.tiposProductos;
 
-      console.log(this.listaTiposProductos);
+      console.log(this.tiposProductos);
 
-      this.listaTiposProductos.forEach(
+      this.tiposProductos.forEach(
         item =>
         { // item es leche
+          let productosAnalisis: Producto[] = [];
           let productoAcotado: number;
           
 
@@ -71,18 +69,16 @@ export class CategoriaComponent implements OnInit {
                 imagen: producto.imagen
               }
 
-              this.productosAnalisis?.push(productoRenovado);
+              productosAnalisis.push(productoRenovado);
               })
-              // Agregar nueva lista de productos a   tiposProductosAnalisis? : TipoProducto[];
+              // Agregar nueva lista de productos a tiposProductosAnalisis? : TipoProducto[];
               let tipoProductoRenovado : TipoProducto = {
                 nombre: item.nombre,
                 valor: item.valor,
-                productos: this.productosAnalisis
+                productos: productosAnalisis
               }
-              this.tiposProductosAnalisis?.push()
+              this.tiposProductosAnalisis?.push(tipoProductoRenovado);
 
-
-              console.log(item);
             }
           }
 
@@ -90,15 +86,11 @@ export class CategoriaComponent implements OnInit {
           )
 
       }
-      
+      console.log('Lista de tipos de productos');
       console.log(this.tiposProductosAnalisis)
 
     }
   
-
-  // tiposProducto? = CATEGORIAS.filter(
-  //   item => item.valor === this.categoriaSeleccionada
-  // )
   tiposProducto? = CATEGORIAS.filter(
     item => item.valor === this.categoriaSeleccionada?.nombre
   )
