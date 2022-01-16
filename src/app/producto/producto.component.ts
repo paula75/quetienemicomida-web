@@ -20,20 +20,50 @@ export class ProductoComponent implements OnInit {
   orden?:string;
   minisLeches : Prod[] = [];
   tipoComponente : string = '' + this.componenteAnalisis.value;
-  // listaProductos.slice(0, this.CANTIDAD_ITEMS);
-  
-
+  productosAcotados?: Producto[] = [];
 
   constructor() { }
 
   ngOnInit(): void {
     this.orden = "little";
+    this.productosAcotados = this.listaProductos;
+
+    this.ordenarProductos();
     
   }
 
   // TODO: Ordenar segun selector de orden
-
-
+  ordenarProductos(){
+    if (this.listaProductos !== undefined){
+      if(this.orden === 'little'){
+        this.listaProductos.sort((obj1,   obj2) => {
+          if ( obj1.valor !==undefined && obj2.valor !==undefined )
+          if (obj1.valor > obj2.valor) {
+            return 1;
+          } 
+          else if (obj1.valor < obj2.valor) {
+            return -1;
+          }
+          return 0;
+            
+        })
+      } else {
+        this.listaProductos.sort((obj1,   obj2) => {
+          if ( obj1.valor !== undefined && obj2.valor !==undefined )
+          if (obj1.valor < obj2.valor) {
+            return 1;
+          } 
+          else if (obj1.valor > obj2.valor) {
+            return -1;
+          }
+          return 0;
+            
+        })
+      }
+      this.productosAcotados = this.listaProductos.slice(0, this.CANTIDAD_ITEMS);
+      
+    }
+  }
 
 }
 
@@ -42,4 +72,5 @@ export interface Prod {
   valor?: number;
   img?: string;
 }
+
 

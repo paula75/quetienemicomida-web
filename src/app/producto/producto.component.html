@@ -6,7 +6,7 @@
           <mat-card-actions>
             Ordenar por: 
             <mat-form-field appearance="fill">
-               <mat-select [(value)]="orden">
+               <mat-select [(value)]="orden" (selectionChange)="ordenarProductos()">
                 <mat-option value="little"> Menor a mayor </mat-option>
                 <mat-option value="big"> Mayor a menor </mat-option>
               </mat-select>
@@ -17,12 +17,12 @@
       </div>
     </mat-card-header>
     <div class="row">
-        <div class="column" *ngFor= "let producto of listaProductos"> 
+        <div class="column" *ngFor= "let producto of productosAcotados"> 
             <div class = "content_img">
                 <img src= {{producto.imagen}} style="width:100%">
                   <div> {{nombreTipoProducto}} </div>
             </div>
-            Cantidad de lo que está analizando
+            Cantidad de {{componenteAnalisis.nombre}} : {{producto.valor}} gr
             
         </div>
         

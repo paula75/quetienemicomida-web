@@ -30,6 +30,7 @@ export class CategoriaComponent implements OnInit {
 
   ngOnChanges() {
     console.log('Cambiiooo menu');
+    this.categoriaSeleccionada = undefined;
 
   }
 
