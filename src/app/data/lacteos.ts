@@ -141,7 +141,7 @@ export const TIPOSLECHES: Producto[] = [
         carbohidratos: 4.8,
         azucar: 4.8,
         sodio: 32,
-        imagen: 'assets/images/lacteos/leche/loncoleche_Descremada.png'
+        imagen: 'assets/images/lacteos/leche/loncoleche_descremada.png'
     },
     
 ];
@@ -158,7 +158,7 @@ export const TIPOSYOGURT: Producto[] = [
         colesterol: 19.7, 
         azucar: 5.7,
         sodio: 59,
-        imagen: 'assets/images/lacteos/yogurt/danone_iokos.png'
+        imagen: 'assets/images/lacteos/yogurt/danone_oikos.png'
     },{
         nombre: 'Soprole Natural', 
         marca: 'Soprole',
