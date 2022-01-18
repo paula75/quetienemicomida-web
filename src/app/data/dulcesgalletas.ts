@@ -1,4 +1,5 @@
 import { Producto } from "../producto";
+import { TipoProducto } from "../tipo-producto";
 
 
 export const TIPOSGALLETAS: Producto[] = [
@@ -117,93 +118,48 @@ export const TIPOSGALLETAS: Producto[] = [
         azucar: 9.9,
         sodio: 393,
         imagen: 'assets/images/dulces/galletas/vivo_salvado.png'
+    },{
+        nombre: 'Costa Frac chocolate', 
+        marca: 'Costa',
+        tipo: 'Frac chocolate',
+        energia: 486,
+        proteina: 4.7,
+        grasa: 21.2,
+        carbohidratos: 69.3,
+        azucar: 33.2,
+        sodio: 330,
+        imagen: 'assets/images/dulces/galletas/costa_fracchocolate.png'
+    },
+    {
+        nombre: 'Mckay Soda clásica', 
+        marca: 'Mckay',
+        tipo: 'Soda clásica',
+        energia: 427,
+        proteina: 9.9,
+        grasa: 8.6,
+        colesterol: 1,
+        carbohidratos: 77.6,
+        azucar: 2.9,
+        sodio: 398,
+        imagen: 'assets/images/dulces/galletas/mckay_sodaclasica.png'
+    },{
+        nombre: 'Mckay Agua sin sal', 
+        marca: 'Mckay',
+        tipo: 'Agua sin sal',
+        energia: 423,
+        proteina: 9.6,
+        grasa: 8.5,
+        colesterol: 1,
+        carbohidratos: 77,
+        azucar: 2.8,
+        sodio: 12,
+        imagen: 'assets/images/dulces/galletas/mckay_aguasinsal.png'
     },
 
 ];
 
-export const TIPOSPAPASFRITAS: Producto[] = [
-
-    {
-        nombre: 'Lays Corte americano', 
-        marca: 'Lays',
-        tipo: 'Corte americano',
-        energia: 552,
-        proteina: 4.4,
-        grasa: 34,
-        carbohidratos: 57,
-        azucar: 2,
-        sodio: 376,
-        imagen: 'assets/images/dulces/galletas/lays_corteamericano.png'
-    },{
-        nombre: 'Lays Stax Crema y Cebolla', 
-        marca: 'Lays',
-        tipo: 'Stax Crema y Cebolla',
-        energia: 490,
-        proteina: 5.9,
-        grasa: 26,
-        carbohidratos: 59,
-        azucar: 4,
-        sodio: 441,
-        imagen: 'assets/images/dulces/galletas/lays_cremacebolla.png'
-    },{
-        nombre: 'Kryspo Original', 
-        marca: 'Kryspo',
-        tipo: 'Original',
-        energia: 507,
-        proteina: 5.8,
-        grasa: 28,
-        carbohidratos: 58,
-        azucar: 0.5,
-        sodio: 380,
-        imagen: 'assets/images/dulces/galletas/kryzpo_original.png'
-    },{
-        nombre: 'Cuisine & Co Sal de mar', 
-        marca: 'Cuisine & Co',
-        tipo: 'Sal de mar',
-        energia: 488,
-        proteina: 7.4,
-        grasa: 25.9,
-        carbohidratos: 56.4,
-        azucar: 0.8,
-        sodio: 218,
-        imagen: 'assets/images/dulces/galletas/cuisine_saldemar.png'
-    },{
-        nombre: 'Tika Nativas andina', 
-        marca: 'Tika',
-        tipo: 'Nativas andina',
-        energia: 536,
-        proteina: 6.1,
-        grasa: 35,
-        carbohidratos: 49.1,
-        azucar: 0.1,
-        sodio: 247,
-        imagen: 'assets/images/dulces/galletas/tika_nativa.png'
-    },
-]
-
-export const TIPOSSNACK: Producto[] = [
-
-    {
-        nombre: 'Pancho Villa Panchitos', 
-        marca: 'Pancho Villa',
-        tipo: 'Panchitos',
-        energia: 488,
-        proteina: 9.4,
-        grasa: 23.4,
-        carbohidratos: 60.2,
-        azucar: 0,
-        sodio: 390,
-        imagen: 'assets/images/dulces/galletas/lays_corteamericano.png'
-    },{
-        nombre: 'Evercrips Original', 
-        marca: 'Evercrips',
-        tipo: 'Original',
-        energia: 533,
-        proteina: 8.4,
-        grasa: 26,
-        carbohidratos: 60,
-        azucar: 12,
-        sodio: 452,
-        imagen: 'assets/images/dulces/galletas/lays_corteamericano.png'
-    },
-]
+export const GALLETA : TipoProducto = {
+    valor: 'galleta',
+    nombre: 'Galleta',
+    productos: TIPOSGALLETAS
+}
