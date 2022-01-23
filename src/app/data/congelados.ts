@@ -176,8 +176,127 @@ export const VEGETARIANOS: Producto[] = [
     },
 ]
 
+export const APANADOS: Producto[] = [
+
+    {
+        nombre: 'Super Pollo Crocante', 
+        marca: 'Super Pollo',
+        tipo: 'Crocante',
+        energia: 224,
+        proteina: 11.8,
+        grasa: 11.3,
+        carbohidratos: 18.9,
+        colesterol: 9.14, 
+        azucar: 0.63,
+        sodio: 395,
+        imagen: 'assets/images/congelados/apanados/superpollo_crocante.png'
+    },{
+        nombre: 'Super Pollo Nuggets de pollo', 
+        marca: 'Super Pollo',
+        tipo: 'Nuggets de pollo',
+        energia: 228,
+        proteina: 12.1,
+        grasa: 12.8,
+        carbohidratos: 16.1,
+        colesterol: 40, 
+        azucar: 1,
+        sodio: 360,
+        imagen: 'assets/images/congelados/apanados/superpollo_nuggetspollo.png'
+    },{
+        nombre: 'La Crianza Nuggets de pollo', 
+        marca: 'La Crianza',
+        tipo: 'Nuggets de pollo',
+        energia: 228,
+        proteina: 12.6,
+        grasa: 14.6,
+        carbohidratos: 11.6,
+        colesterol: 31, 
+        azucar: 1.7,
+        sodio: 363,
+        imagen: 'assets/images/congelados/apanados/lacrianza_nuggerspollo.png'
+    },{
+        nombre: 'Receta del Abuelo Suprema de pollo jamón y queso', 
+        marca: 'Receta del Abuelo',
+        tipo: 'Suprema de pollo jamón y queso',
+        energia: 225,
+        proteina: 12.9,
+        grasa: 13.9,
+        carbohidratos: 12.1,
+        colesterol: 28, 
+        azucar: 1,
+        sodio: 759,
+        imagen: 'assets/images/congelados/apanados/recetaabuelo_supremajamonqueso.png'
+    },{
+        nombre: 'Cuisine&Co Mozzarella sticks', 
+        marca: 'Cuisine&Co',
+        tipo: 'Mozzarella sticks',
+        energia: 242,
+        proteina: 10.6,
+        grasa: 10.8,
+        carbohidratos: 25.5,
+        colesterol: 18, 
+        azucar: 2.4,
+        sodio: 451,
+        imagen: 'assets/images/congelados/apanados/cuisine_mozarellasticks.png'
+    },{
+        nombre: 'Sadia Nugget crocante', 
+        marca: 'Sadia',
+        tipo: 'Nugget crocante',
+        energia: 239,
+        proteina: 10.7,
+        grasa: 13.4,
+        carbohidratos: 18.9,
+        colesterol: 22.1, 
+        azucar: 2,
+        sodio: 605,
+        imagen: 'assets/images/congelados/apanados/sadia_nuggetspollo.png'
+    },{
+        nombre: 'Sadia Nugget pollo kids', 
+        marca: 'Sadia',
+        tipo: 'Nugget pollo kids',
+        energia: 215,
+        proteina: 12.5,
+        grasa: 10.3,
+        carbohidratos: 17.9,
+        colesterol: 23.3, 
+        azucar: 0.34,
+        sodio: 270,
+        imagen: 'assets/images/congelados/apanados/sadia_nuggetskids.png'
+    },{
+        nombre: 'Receta del Abuelo Croquetas de pollo', 
+        marca: 'Receta del Abuelo',
+        tipo: 'Croquetas de pollo',
+        energia: 240,
+        proteina: 13.8,
+        grasa: 14.9,
+        carbohidratos: 12.6,
+        colesterol: 28, 
+        azucar: 1.9,
+        sodio: 390,
+        imagen: 'assets/images/congelados/apanados/recetaabuelo_croquetasspollo.png'
+    },{
+        nombre: 'Receta del Abuelo Nuggets de pollo', 
+        marca: 'Receta del Abuelo',
+        tipo: 'Nuggets de pollo',
+        energia: 204,
+        proteina: 13.2,
+        grasa: 12.1,
+        carbohidratos: 10.5,
+        colesterol: 26, 
+        azucar: 0.5,
+        sodio: 553,
+        imagen: 'assets/images/congelados/apanados/recetaabuelo_nuggetspollo.png'
+    },
+]
+
 export const CONGELADOSVEGANOS : TipoProducto = {
     valor: 'vegetarianos',
     nombre: 'Vegetarianos y Veganos',
     productos: VEGETARIANOS
+}
+
+export const CONGELADOSAPANADOS : TipoProducto = {
+    valor: 'apanados',
+    nombre: 'Apanados',
+    productos: APANADOS
 }

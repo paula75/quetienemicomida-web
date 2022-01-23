@@ -1,5 +1,5 @@
 import { Categoria } from './../categoria';
-import { CONGELADOSVEGANOS } from './congelados';
+import { CONGELADOSAPANADOS, CONGELADOSVEGANOS } from './congelados';
 import { GALLETA } from './dulcesgalletas';
 import { LECHE, YOGURT } from './lacteos';
 import { OTROSSNACK, PAPASFRITAS } from './snacks';
@@ -30,6 +30,7 @@ export const CATEGORIAS: Categoria[] = [
         nombre: 'Congelados',
         tiposProductos: [
             CONGELADOSVEGANOS,
+            CONGELADOSAPANADOS
         ]
     },
 ];
