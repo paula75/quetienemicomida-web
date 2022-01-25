@@ -3,21 +3,22 @@
 
         <img class="logo" src= "../../assets/images/logo.png">
 
+        <button mat-button routerLink="/" class="font-menu"> Inicio </button>
 
         <button mat-button [matMenuTriggerFor]="menu" class="font-menu">Menu</button>
         <mat-menu #menu="matMenu">
             <span *ngFor= "let tipo of tipoAnalisis">
-                <button mat-menu-item (click)="chooseAnalisis(tipo)" >{{tipo.nombre}}</button>
+                <button mat-menu-item routerLink="/analisis/{{tipo.value}}" (click)="chooseAnalisis(tipo)">{{tipo.nombre}}</button>
             </span>
         </mat-menu>
-        <button mat-button class="font-menu"> Sobre nosotros </button>
+        <button mat-button routerLink="/about" class="font-menu"> Sobre nosotros </button>
 
-        <button mat-button class="font-menu"> Contacto</button>
+        <button mat-button routerLink="/contacto" class="font-menu"> Contacto</button>
 
     </mat-toolbar>
   </p>
-  
-<app-categoria  [componenteAnalisis]="elementoAnalisis"></app-categoria>
+<!--   
+<app-categoria  [componenteAnalisis]="elementoAnalisis"></app-categoria> -->
 
 
 

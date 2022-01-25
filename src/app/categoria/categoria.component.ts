@@ -1,9 +1,13 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { NumberValueAccessor } from '@angular/forms';
+import { ActivatedRoute } from '@angular/router';
 import { Categoria } from '../categoria';
 import { CATEGORIAS } from '../data/categorias';
 import { Producto } from '../producto';
 import { TipoProducto } from '../tipo-producto';
+import { Location } from '@angular/common';
+import { Componente } from '../data/componente';
+import { ComponenteService } from '../componente.service';
 
 @Component({
   selector: 'app-categoria',
@@ -11,26 +15,33 @@ import { TipoProducto } from '../tipo-producto';
   styleUrls: ['./categoria.component.css']
 })
 export class CategoriaComponent implements OnInit {
-  @Input() componenteAnalisis: Analisis = {
+  componenteAnalisis: Componente = {
     value: 'sodio',
     nombre: 'Sodio'
   };
-
-
   categorias = CATEGORIAS;
   categoriaSeleccionada?: Categoria ;
   tiposProductos?: TipoProducto[];
   tiposProductosAnalisis? : TipoProducto[];
 
-  constructor() { }
+  constructor( 
+    private route: ActivatedRoute,
+    private componenteService : ComponenteService,
+  ) { }
   
   ngOnInit(): void {
+    this.route.params.subscribe(routeParams => this.getComponente(routeParams['value']));
     this.tiposProductosAnalisis = [];
   }
 
   ngOnChanges() {
     this.categoriaSeleccionada = undefined;
+  }
 
+  getComponente(ruta: string){
+    this.componenteService.getComponente(ruta).subscribe(
+      item => this.componenteAnalisis = item
+      );
   }
 
   cambioCategoria(data: any){
@@ -71,11 +82,9 @@ export class CategoriaComponent implements OnInit {
             }
           }
           )
-
       }
 
     }
-  
 
   private extraerComponente(producto: Producto, componente: string) {
     let valueComponente : number = 0;
@@ -95,8 +104,3 @@ export class CategoriaComponent implements OnInit {
   }
 }
 
-
-export interface Analisis {
-  value: string;
-  nombre: string;
-}

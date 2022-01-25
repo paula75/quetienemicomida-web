@@ -1,43 +1,29 @@
 import { Component, OnInit } from '@angular/core';
-import { Analisis } from '../categoria/categoria.component';
-
+import { ComponenteService } from '../componente.service';
+import { Componente } from '../data/componente';
 @Component({
   selector: 'app-menu-bar',
   templateUrl: './menu-bar.component.html',
   styleUrls: ['./menu-bar.component.css']
 })
 export class MenuBarComponent implements OnInit {
-  tipoAnalisis = [
-    {
-      value: 'sodio',
-      nombre: 'Sodio'
-    },{
-      value: 'azucar',
-      nombre: 'Azúcar'
-    },{
-      value: 'proteina',
-      nombre: 'Proteína'
-    },{
-      value: 'grasa',
-      nombre: 'Grasa'
-    },{
-      value: 'carbohidratos',
-      nombre: 'H. de carbono'
-    },{
-      value: 'colesterol',
-      nombre: 'Colesterol'
-    }
-  ];
+  tipoAnalisis : Componente[] = [];
 
-  elementoAnalisis : Analisis= {
+  elementoAnalisis : Componente = {
     value: 'sodio',
     nombre: 'Sodio'
   };
 
-  constructor() { }
+  constructor(
+    private componenteService: ComponenteService
+  ) { }
   
   ngOnInit(): void {
+    this.getComponentes();
+  }
 
+  getComponentes() { 
+    this.tipoAnalisis = this.componenteService.getComponentes();
   }
 
   chooseAnalisis(tipo: any) {

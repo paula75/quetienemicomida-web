@@ -15,6 +15,9 @@ import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatSelectModule } from '@angular/material/select'; 
 import { FormsModule } from '@angular/forms';
+import { InicioComponent } from './inicio/inicio.component';
+import { AboutComponent } from './about/about.component';
+import { ContactoComponent } from './contacto/contacto.component';
 
 
 @NgModule({
@@ -24,6 +27,9 @@ import { FormsModule } from '@angular/forms';
     ProductoComponent,
     FooterComponent,
     CategoriaComponent,
+    InicioComponent,
+    AboutComponent,
+    ContactoComponent,
   ],
   imports: [
     BrowserModule,
