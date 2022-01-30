@@ -1,26 +1,58 @@
 <div>  </div>
 
-<div class="main-title">Que tienen las cosas que comemos?</div>
-<div class="site-description"> 
-    <p>
-        El objetivo de esta página es poder comparar fácilmente distintos alimentos envasados que se compran y consumen diariamente.
-        Si deseas saber más sobre el proyecto, puedes ver la sección "Sobre nosotros". Si deseas pedir que se agrege un producto nuevo o tienes otra idea para el proyecto puedes enviarnos un mensaje
-    </p>    
+<mat-card class="card-inicio">
+
+    <div fxLayoutAlign="center" class="main-title">
+        <h1>
+            ¿QUÉ TIENE MI COMIDA?
+        </h1>
+    </div>
+    <div class="site-description" fxLayoutAlign="center" > 
+        <p>
+            Compara fácilmente la información nutricional de productos que consumes diariamente
+        </p>    
+    </div>
+    <div fxLayoutAlign="center" >
+        <button mat-button routerLink="/about" class="button-inicio"> Sobre nosotros </button>
+    
+    </div>
+</mat-card>
+
+
+<div fxLayout="row" fxLayoutGap="15px" fxLayoutAlign="center" fxLayout.lt-md="column" fxLayoutGap.lt-md="20px">
+    <div fxFlex="30%">
+        <div fxLayout="row" fxLayoutAlign="center">
+            <mat-icon fxFlexAlign="center">face</mat-icon>
+        </div>
+        <div class="descripcion-h3">
+            Quienes somos
+        </div> 
+        <div class="descripcion">
+            Somos personas interesadas en que puedas comparar fácilmente la información nutricional de los productos que consumes 
+        </div>
+    </div>
+    <div fxFlex="30%">
+        <div fxLayout="row" fxLayoutAlign="center">
+            <mat-icon fxFlexAlign="center">receipt</mat-icon>
+        </div>
+        <div class="descripcion-h3">
+            Que hacemos
+        </div>
+            <div class="descripcion">
+                Mostramos fácilmente la comparativa de distintos productos para que puedas analizar calorías, sodio, azúcar, grasa, carbohidratos, proteínas o colesterol
+            </div>
+        </div>
+        <div fxFlex="30%">
+        <div fxLayout="row" fxLayoutAlign="center">
+            <mat-icon fxFlexAlign="center">help_outline</mat-icon>
+        </div>
+        <div class="descripcion-h3">
+            Como lo hacemos
+        </div>    
+        <div class="descripcion">
+        
+            Tenemos una base de datos con la información nutricional de cada producto. Puedes ordenar los productos según lo que deseas analizar
+        </div>
+    </div>
 </div>
-
-<div>
-    <button mat-button routerLink="/about" class="button-inicio"> Sobre nosotros </button>
-
-</div>
-
-Quienes somos
-Existen muchas personas que tienen restricciones de comida, ya sea que deben consumir una baja cantidad de sodio, de azúcar o de algún otro componente, 
-o bien que están deseosas de saber que contiene lo que están comprando. Hasta ahora es un proceso muy tedioso de comparar en la tienda producto por producto, 
-lo que implica mucho tiempo y dedicación. En este proyecto nos preocupamos de ayudar a las personas a saber mejor lo que están consumiendo.
-
-
-Que hacemos
-Mostramos los 5 productos que tienen mayor o menor cantidad de algún componente específico. Hasta el momento puedes analizar calorías, sodio, azúcar, grasa, carbohidratos, proteínas y colesterol.
-
-Como lo hacemos
-Tenemos una base de datos con la información nutricional de cada producto cada 100ml/gr, para poder comparar equitativamente, dejando fuera el concepto de "porción", que puede ser cambiado de producto en producto
+    

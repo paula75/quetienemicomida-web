@@ -14,7 +14,9 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatSelectModule } from '@angular/material/select'; 
+import { MatIconModule } from '@angular/material/icon';
 import { FormsModule } from '@angular/forms';
+import { FlexLayoutModule } from '@angular/flex-layout';
 import { InicioComponent } from './inicio/inicio.component';
 import { AboutComponent } from './about/about.component';
 import { ContactoComponent } from './contacto/contacto.component';
@@ -40,7 +42,9 @@ import { ContactoComponent } from './contacto/contacto.component';
     MatCardModule,
     MatButtonModule,
     MatSelectModule,
-    FormsModule
+    MatIconModule,
+    FormsModule,
+    FlexLayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]
