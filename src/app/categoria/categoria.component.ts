@@ -5,7 +5,6 @@ import { Categoria } from '../categoria';
 import { CATEGORIAS } from '../data/categorias';
 import { Producto } from '../producto';
 import { TipoProducto } from '../tipo-producto';
-import { Location } from '@angular/common';
 import { Componente } from '../data/componente';
 import { ComponenteService } from '../componente.service';
 
@@ -42,9 +41,10 @@ export class CategoriaComponent implements OnInit {
     this.componenteService.getComponente(ruta).subscribe(
       item => this.componenteAnalisis = item
       );
+    this.cambioCategoria();
   }
 
-  cambioCategoria(data: any){
+  cambioCategoria(){
     // Aca crear nuevos productos
     if (this.categoriaSeleccionada){
       this.tiposProductosAnalisis = [];
