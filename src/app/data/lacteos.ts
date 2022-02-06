@@ -258,10 +258,224 @@ export const TIPOSYOGURT: Producto[] = [
     },
 ]
 
+export const TIPOSQUESOS: Producto[] = [
+    {
+        nombre: 'Quilque mantecoso laminado', 
+        marca: 'Quilque',
+        tipo: 'mantecoso laminado',
+        energia: 359,
+        proteina: 23.6,
+        grasa: 26.3,
+        carbohidratos: 7,
+        colesterol: 70.2, 
+        azucar: 1.3,
+        sodio: 751,
+        imagen: 'assets/images/lacteos/queso/quilque_mantecosolaminado.png'
+    },{
+        nombre: 'Río Bueno mantecoso laminado', 
+        marca: 'Río Bueno',
+        tipo: 'mantecoso laminado',
+        energia: 343,
+        proteina: 23.3,
+        grasa: 27.7,
+        carbohidratos: 0,
+        colesterol: 89, 
+        azucar: 0,
+        sodio: 498,
+        imagen: 'assets/images/lacteos/queso/riobueno_mantecosolaminado.png'
+    },{
+        nombre: 'Soprole gauda laminado', 
+        marca: 'Soprole',
+        tipo: 'gauda laminado',
+        energia: 358,
+        proteina: 25.3,
+        grasa: 26.7,
+        carbohidratos: 4,
+        colesterol: 64.8, 
+        azucar: 0.1,
+        sodio: 494,
+        imagen: 'assets/images/lacteos/queso/soprole_gaudalaminado.png'
+    },{
+        nombre: 'Colun ranco laminado', 
+        marca: 'Colun',
+        tipo: 'ranco laminado',
+        energia: 330,
+        proteina: 24,
+        grasa: 26.,
+        carbohidratos: 0,
+        colesterol: 83, 
+        azucar: 0,
+        sodio: 164,
+        imagen: 'assets/images/lacteos/queso/colun_rancolaminado.png'
+    },{
+        nombre: 'Colun Quesillo', 
+        marca: 'Colun',
+        tipo: 'Quesillo',
+        energia: 138,
+        proteina: 13,
+        grasa:7.5,
+        carbohidratos: 4.5,
+        colesterol: 24, 
+        azucar: 3.8,
+        sodio: 373,
+        imagen: 'assets/images/lacteos/queso/colun_quesillo.png'
+    },{
+        nombre: 'Colun Quesillo sin sal', 
+        marca: 'Colun',
+        tipo: 'Quesillo sin sal',
+        energia: 138,
+        proteina: 13,
+        grasa:7.5,
+        carbohidratos: 4.5,
+        colesterol: 24, 
+        azucar: 3.8,
+        sodio: 51,
+        imagen: 'assets/images/lacteos/queso/colun_quesillosinsal.png'
+    },{
+        nombre: 'Las Parcelas de Valdivia Queso mantecoso laminado', 
+        marca: 'Las Parcelas de Valdivia',
+        tipo: 'Queso mantecoso laminado',
+        energia: 361,
+        proteina: 22.2,
+        grasa: 30,
+        carbohidratos: 0.5,
+        colesterol: 91, 
+        azucar: 0.5,
+        sodio: 395,
+        imagen: 'assets/images/lacteos/queso/parcelasvaldivia_mantecosolaminado.png'
+    },{
+        nombre: 'Quillayes Mozzarella granulado', 
+        marca: 'Quillayes',
+        tipo: 'Mozzarella granulado',
+        energia: 318,
+        proteina: 23,
+        grasa: 25,
+        carbohidratos: 0,
+        colesterol: 37, 
+        azucar: 0,
+        sodio: 300,
+        imagen: 'assets/images/lacteos/queso/quillayes_mozzarellagranulado.png'
+    },{
+        nombre: 'Quillayes Queso Parmesano', 
+        marca: 'Quillayes',
+        tipo: 'Queso Parmesano',
+        energia: 336,
+        proteina: 29.4,
+        grasa: 23.3,
+        carbohidratos: 2.1,
+        colesterol: 73.5, 
+        azucar: 0,
+        sodio: 653,
+        imagen: 'assets/images/lacteos/queso/quillayes_parmesano.png'
+    },{
+        nombre: 'La Vaquita Queso gauda granulado', 
+        marca: 'La Vaquita',
+        tipo: 'Queso gauda granulado',
+        energia: 353,
+        proteina: 24.3,
+        grasa: 28.2,
+        carbohidratos: 0.5,
+        colesterol: 75.7, 
+        azucar: 0.5,
+        sodio: 805,
+        imagen: 'assets/images/lacteos/queso/lavaquita_gaudagranulado.png'
+    },{
+        nombre: 'La Vaquita Queso mozzarella granulado', 
+        marca: 'La Vaquita',
+        tipo: 'Queso mozzarella granulado',
+        energia: 316,
+        proteina: 23.3,
+        grasa: 23.6,
+        carbohidratos: 2.5,
+        colesterol: 63.8, 
+        azucar: 1,
+        sodio: 510,
+        imagen: 'assets/images/lacteos/queso/lavaquita_mozzarellagranulado.png'
+    },{
+        nombre: 'La Vaquita Queso Fresco', 
+        marca: 'La Vaquita',
+        tipo: 'Queso Fresco',
+        energia: 239,
+        proteina: 15.5,
+        grasa: 17.9,
+        carbohidratos: 4.2,
+        colesterol: 52, 
+        azucar: 2.5,
+        sodio: 320,
+        imagen: 'assets/images/lacteos/queso/lavaquita_quesofresco.png'
+    },{
+        nombre: 'Santa Rosa Mozzarela cremoso', 
+        marca: 'Santa Rosa',
+        tipo: 'Mozzarela cremoso',
+        energia: 309,
+        proteina: 26,
+        grasa: 22,
+        carbohidratos: 2.9,
+        colesterol: 57, 
+        azucar: 0.1,
+        sodio: 373,
+        imagen: 'assets/images/lacteos/queso/santarosa_mozzarellacremoso.png'
+    },{
+        nombre: 'Colun Queso rallado Parmesano', 
+        marca: 'Colun',
+        tipo: 'Queso rallado Parmesano',
+        energia: 465,
+        proteina: 46.5,
+        grasa: 31,
+        carbohidratos: 0,
+        colesterol: 99, 
+        azucar: 0,
+        sodio: 1233,
+        imagen: 'assets/images/lacteos/queso/colun_parmesanorallado.png'
+    },{
+        nombre: 'Quillayes Chacra', 
+        marca: 'Quillayes',
+        tipo: 'Chacra',
+        energia: 187,
+        proteina: 12.7,
+        grasa: 14.1,
+        carbohidratos: 2.4,
+        colesterol: 39.5, 
+        azucar: 1.2,
+        sodio: 300,
+        imagen: 'assets/images/lacteos/queso/quillayes_chacra.png'
+    },{
+        nombre: 'Quillayes Queso Fresco', 
+        marca: 'Quillayes',
+        tipo: 'Queso Fresco',
+        energia: 187,
+        proteina: 12.7,
+        grasa: 14.1,
+        carbohidratos: 2.4,
+        colesterol: 39.5, 
+        azucar: 1.2,
+        sodio: 300,
+        imagen: 'assets/images/lacteos/queso/quillayes_quesofresco.png'
+    },{
+        nombre: 'Colun Reggianito clásico', 
+        marca: 'Colun',
+        tipo: 'Reggianito clásico',
+        energia: 347,
+        proteina: 36.3,
+        grasa: 22.4,
+        carbohidratos: 0,
+        colesterol: 72, 
+        azucar: 0,
+        sodio: 859,
+        imagen: 'assets/images/lacteos/queso/colun_reggianito.png'
+    },
+    ];
+
 export const LECHE : TipoProducto = {
     valor: 'leche',
     nombre: 'Leche',
     productos: TIPOSLECHES
+}
+
+export const QUESOS : TipoProducto = {
+    valor: 'queso',
+    nombre: 'Queso',
+    productos: TIPOSQUESOS
 }
 
 export const YOGURT : TipoProducto = {

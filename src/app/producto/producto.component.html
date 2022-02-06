@@ -23,7 +23,7 @@
                 <img src= {{producto.imagen}} style="width:100%">
                   <div> {{producto.nombre}} </div>
             </div>
-          <div *ngIf="componenteAnalisis.value==='sodio'" class="foot-img">
+          <div *ngIf="componenteAnalisis.value==='sodio' || componenteAnalisis.value==='colesterol'" class="foot-img">
             Cant. de {{componenteAnalisis.nombre}} : {{producto.valor}} mg
           </div>
           <div *ngIf="componenteAnalisis.value==='energia'" class="foot-img">

@@ -1,7 +1,7 @@
 import { Categoria } from './../categoria';
 import { CONGELADOSAPANADOS, CONGELADOSVEGANOS } from './congelados';
 import { GALLETA } from './dulcesgalletas';
-import { LECHE, YOGURT } from './lacteos';
+import { LECHE, QUESOS, YOGURT } from './lacteos';
 import { OTROSSNACK, PAPASFRITAS } from './snacks';
 
 export const CATEGORIAS: Categoria[] = [
@@ -10,7 +10,8 @@ export const CATEGORIAS: Categoria[] = [
         nombre: 'Lácteos',
         tiposProductos: [
             LECHE,
-            YOGURT
+            YOGURT,
+            QUESOS
         ]
     },{
         valor: 'dulces', 
