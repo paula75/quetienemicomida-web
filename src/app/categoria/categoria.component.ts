@@ -94,6 +94,8 @@ export class CategoriaComponent implements OnInit {
       valueComponente = producto['azucar'];
     else if (componente === 'proteina' && producto['proteina'] != undefined)
       valueComponente = producto['proteina'];
+    else if (componente === 'energia' && producto['energia'] != undefined)
+      valueComponente = producto['energia'];
     else if (componente === 'grasa' && producto['grasa'] != undefined)
       valueComponente = producto['grasa'];
     else if (componente === 'carbohidratos' && producto['carbohidratos'] != undefined)

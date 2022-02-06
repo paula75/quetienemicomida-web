@@ -23,8 +23,14 @@
                 <img src= {{producto.imagen}} style="width:100%">
                   <div> {{producto.nombre}} </div>
             </div>
-          <div class="foot-img">
-            Cant. de {{componenteAnalisis.nombre}} : {{producto.valor}} mgr
+          <div *ngIf="componenteAnalisis.value==='sodio'" class="foot-img">
+            Cant. de {{componenteAnalisis.nombre}} : {{producto.valor}} mg
+          </div>
+          <div *ngIf="componenteAnalisis.value==='energia'" class="foot-img">
+            Cant. de {{componenteAnalisis.nombre}} : {{producto.valor}} cal
+          </div>
+          <div *ngIf="componenteAnalisis.value!=='sodio'&&componenteAnalisis.value!=='energia'" class="foot-img">
+            Cant. de {{componenteAnalisis.nombre}} : {{producto.valor}} g
           </div>
             
         </div>

@@ -16,6 +16,9 @@ export const TIPO_ANALISIS = [
       value: 'proteina',
       nombre: 'Proteína'
     },{
+      value: 'energia',
+      nombre: 'Calorías'
+    },{
       value: 'grasa',
       nombre: 'Grasa'
     },{
