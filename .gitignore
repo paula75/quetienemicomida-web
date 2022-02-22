@@ -1,6 +1,6 @@
+# dependency
 node_modules/
 .angular/
 dist/
-.*
-firebase.json
-database.rules.json
+# cache firebase
+.firebase
