@@ -1,5 +1,4 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { TIPOSLECHES } from '../data/lacteos';
 import { Producto } from '../producto';
 @Component({
   selector: 'app-producto',
@@ -20,17 +19,23 @@ export class ProductoComponent implements OnInit {
   cantidadProductos: number = 0;
   tipoComponente : string = '' + this.componenteAnalisis.value;
   productosAcotados?: Producto[] = [];
+  verMasOption = false;
 
   constructor() { }
 
   ngOnInit(): void {
     this.productosAcotados = this.listaProductos;
+    console.log(this.productosAcotados);
     this.ordenarProductos();
     
   }
 
   ngOnChanges(){
     this.cantidadProductos = this.listaProductos? this.listaProductos.length : 0;
+  }
+
+  verMas(){
+    this.verMasOption = !this.verMasOption;
   }
 
   // TODO: Ordenar segun selector de orden

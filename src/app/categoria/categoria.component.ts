@@ -61,13 +61,16 @@ export class CategoriaComponent implements OnInit {
           item.productos.forEach(
             producto => {
               productoAcotado = this.extraerComponente(producto, this.componenteAnalisis.value);
-
+              
               // Nuevo producto
-              let productoRenovado: Producto = {
-                nombre: producto.nombre,
-                valor: productoAcotado,
-                imagen: producto.imagen
-              }
+              // let productoRenovado: Producto = {
+              //   nombre: producto.nombre,
+              //   valor: productoAcotado,
+              //   imagen: producto.imagen
+              // }
+
+              let productoRenovado: Producto = producto;
+              productoRenovado['valor'] = productoAcotado;
 
               productosAnalisis.push(productoRenovado);
               })

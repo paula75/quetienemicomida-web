@@ -160,6 +160,6 @@ export const TIPOSGALLETAS: Producto[] = [
 
 export const GALLETA : TipoProducto = {
     valor: 'galleta',
-    nombre: 'Galleta',
+    nombre: 'Galletas',
     productos: TIPOSGALLETAS
 }

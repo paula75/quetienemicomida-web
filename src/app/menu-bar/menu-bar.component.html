@@ -5,7 +5,7 @@
 
         <button mat-button routerLink="/" class="font-menu"> Inicio </button>
 
-        <button mat-button [matMenuTriggerFor]="menu" class="font-menu">Menu</button>
+        <button mat-button [matMenuTriggerFor]="menu" class="font-menu">Analizar</button>
         <mat-menu #menu="matMenu">
             <span *ngFor= "let tipo of tipoAnalisis">
                 <button mat-menu-item routerLink="/analisis/{{tipo.value}}" (click)="chooseAnalisis(tipo)">{{tipo.nombre}}</button>

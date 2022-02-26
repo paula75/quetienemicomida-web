@@ -12,7 +12,7 @@
                 <mat-option value="big"> Mayor a menor </mat-option>
               </mat-select>
             </mat-form-field>
-            <button mat-button> Graficar </button>
+            <button mat-raised-button color="primary" (click)="verMas()" > Ver más </button>
           </mat-card-actions>
 
       </div>
@@ -29,9 +29,29 @@
           <div *ngIf="componenteAnalisis.value==='energia'" class="foot-img">
             Cant. de {{componenteAnalisis.nombre}} : {{producto.valor}} cal
           </div>
-          <div *ngIf="componenteAnalisis.value!=='sodio'&&componenteAnalisis.value!=='energia'" class="foot-img">
+          <div *ngIf="componenteAnalisis.value!=='sodio'&&componenteAnalisis.value!=='energia'&&componenteAnalisis.value!=='colesterol'" class="foot-img">
             Cant. de {{componenteAnalisis.nombre}} : {{producto.valor}} g
           </div>
+
+          <div *ngIf="verMasOption === true"  class="lista-otros">
+
+            <!-- <mat-list >
+              <mat-list-item class="otros-texto"> Azúcar: {{producto.azucar}} g </mat-list-item>
+              <mat-list-item class="otros-texto"> Calorías : {{producto.energia}} kCal </mat-list-item>
+              <mat-list-item class="otros-texto"> Colesterol: {{producto.colesterol}} mg </mat-list-item>
+              <mat-list-item class="otros-texto"> H. de carbono: {{producto.carbohidratos}} g </mat-list-item>
+              <mat-list-item class="otros-texto"> Grasa : {{producto.grasa}} g </mat-list-item>
+              <mat-list-item class="otros-texto"> Proteínas : {{producto.proteina}} g</mat-list-item>
+            </mat-list> -->
+            <p class="otros-texto"> Azúcar: {{producto.azucar}} g </p>
+            <p class="otros-texto"> Calorías : {{producto.energia}} kCal </p>
+            <p class="otros-texto"> Colesterol: {{producto.colesterol}} mg </p>
+            <p class="otros-texto"> H. de carbono: {{producto.carbohidratos}} g </p>
+            <p class="otros-texto"> Grasa : {{producto.grasa}} g </p>
+            <p class="otros-texto"> Proteínas : {{producto.proteina}} g</p>
+            <p class="otros-texto"> Sodio: {{producto.sodio}} mg </p>
+          </div>
+            
             
         </div>
         

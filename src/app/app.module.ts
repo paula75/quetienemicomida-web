@@ -9,6 +9,7 @@ import { MenuBarComponent } from './menu-bar/menu-bar.component';
 import { CategoriaComponent } from './categoria/categoria.component';
 import { FooterComponent } from './footer/footer.component';
 
+import { MatListModule } from '@angular/material/list';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatCardModule } from '@angular/material/card';
@@ -44,6 +45,7 @@ import { ContactoComponent } from './contacto/contacto.component';
     MatSelectModule,
     MatIconModule,
     FormsModule,
+    MatListModule,
     FlexLayoutModule
   ],
   providers: [],
